@@ -6,11 +6,11 @@ const aws   = require('aws-sdk');
 const multerS3 = require('multer-s3');
 
 const stotageTypes = {
-    local: multer.diskStorage({
-        destination: (req, file, cb) => {
-            cb(null, path.resolve(__dirname, '..', '..', 'tmp', 'upload'));  
-        }
-     }),
+//     local: multer.diskStorage({
+//         destination: (req, file, cb) => {
+//             cb(null, path.resolve(__dirname, '..', '..', 'tmp', 'upload'));  
+//         }
+//      }),
 
      s3: multerS3({
          s3: new aws.S3({
