@@ -19,17 +19,17 @@ const stotageTypes = {
          }),
          bucket: process.env.AWS_BUCKET_NAME,
          contentType: multerS3.AUTO_CONTENT_TYPE,
-         Key: (req, file, cb) => {
-            crypto.randomBytes(16, (err, hash) => {
-              if (err) cb(err);
+//          Key: (req, file, cb) => {
+//             crypto.randomBytes(16, (err, hash) => {
+//               if (err) cb(err);
       
-              const fileName = `${file.originalname}`;
+//               const fileName = `${file.originalname}`;
       
-              cb(null, fileName);
-            });
-          },
+//               cb(null, fileName);
+//             });
+//           },
          
-     })
+//      })
 }
 
 module.exports = {
