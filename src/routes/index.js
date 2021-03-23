@@ -6,7 +6,7 @@ dotenv.config();
 
 const uploadController = require( '../controllers/uploadController');
 const multer = require('multer');
-const set_multer = require('../uploads_aws/mutlers3');
+const set_multer = require('../upload/mutlers3');
 
 
 
